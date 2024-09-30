@@ -1,0 +1,63 @@
+
+<!-- Modal -->
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog d-flex justify-content-center">
+        <div class="modal-content w-100">
+
+            <div class="flex pt-3">
+       
+                <div class="flex-none">
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    
+                <div class="flex-grow-1 mb-2">     
+                    <%= image_tag("https://storage.googleapis.com/heidless-ror-7-airbnb-app-5-bucket-0/images/avatar.png", size:"100x100", class:"mx-auto", alt:"site avatar") %>
+                </div>
+
+            </div>
+
+            <div class="pt-3">
+                   
+                <h2 class="h4 text-center">Login/Signup - TST</h2>
+                
+            </div>
+
+            <hr>
+
+            <div class="modal-body ">
+                <form>
+                    <!-- Name input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="form-label" for="name1">Name</label>
+                        <input type="text" id="name1" class="form-control border border-dark" value="default-name" />
+                    </div>
+
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="form-label" for="email1">Email address</label> 
+                        <input type="email" id="email1" class="form-control border border-dark" placeholder="default-email" value="heidlessemail05@gmail.com" />
+                    </div>
+
+                    <!-- password input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="form-label" for="password1">Password</label>
+                        <input type="password" id="password1" class="form-control border border-dark" />
+                    </div>
+
+                    <div class="modal-header">
+                        <!-- Submit button -->
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block w-100">Sign up</button>
+                    </div>
+            
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-light btn-block w-100 border border-dark">
+                            <i class="fa fa-brands fa-google"></i> Continue with Google
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->

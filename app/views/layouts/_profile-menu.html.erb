@@ -1,0 +1,39 @@
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <%= image_tag("https://storage.googleapis.com/heidless-ror-7-airbnb-app-5-bucket-0/images/avatar.png", size:"30x30", :alt => "header avatar") %>
+</a>
+
+<ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbar:Dropdown">
+  <li class="nav-item">
+    <!-- Button trigger modal -->
+    <button type="button" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">
+      Register Here
+    </button>
+  </li>
+  <li class="nav-item">
+    <!-- Button trigger modal -->
+    <button type="button" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrationModal">
+      Register Here
+    </button>
+  </li>
+  <li class="nav-item">
+    <!-- Button trigger modal -->
+    <button type="button" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Log In
+    </button>
+  </li>
+
+  <li><hr class="dropdown-divider"></li>
+  <li> <%= link_to "Sign Up", new_user_registration_path, class:"dropdown-item btn btn-secondary" %> </li>
+  <li> <%= link_to "Sign In", new_user_session_path, class:"dropdown-item dropdown-item" %> </li>
+  <li><hr class="dropdown-divider"></li>
+
+  <li> <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-danger" %></li>
+  
+  <li><hr class="dropdown-divider"></li>
+
+  <li> <%= link_to "Gift Cards", root_path, class:"dropdown-item btn btn-secondary" %> </li>
+  <li> <%= link_to "airbnb your home", root_path, class:"dropdown-item btn btn-secondary" %> </li>
+  <li> <%= link_to "Host an experience", root_path, class:"dropdown-item btn btn-secondary" %> </li>
+  <li> <%= link_to "Help Center", root_path, class:"dropdown-item btn btn-secondary" %> </li>
+</ul>
