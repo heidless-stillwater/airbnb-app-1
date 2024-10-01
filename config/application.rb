@@ -39,6 +39,7 @@ module AirbnbApp1
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # prevents error caused by sass_rails
     config.assets.css_compressor = nil
 
   end
