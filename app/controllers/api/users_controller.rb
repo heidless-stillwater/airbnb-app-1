@@ -1,5 +1,4 @@
 
-
 module Api
   class UsersController < ApplicationController
     def show
