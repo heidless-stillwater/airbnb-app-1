@@ -11,6 +11,8 @@
     <h1>test</h1>
   </div>
 
+  <%= render :partial => 'home/index_partial_0', :locals => { sub_p: 'home/index_partial_1' } %>
+
   <div class="container mb-5 pt-3 pb-3 text-white bg-info rounded-9", style="width:800px">
     <% @all_users.each do |usr|  %>
       <ul>
