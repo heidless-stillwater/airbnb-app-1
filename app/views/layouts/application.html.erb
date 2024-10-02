@@ -48,20 +48,20 @@
   </head>
 
   <body>
+      <%= render 'layouts/header' %>
+      <%= render 'layouts/navbar' %>
+      <%= render 'layouts/alerts' %>
 
-    <%= render 'layouts/header' %>
-    <%= render 'layouts/navbar' %>
-    <%= render 'layouts/alerts' %>
+      <div class="container">
+        <%= yield %>
+      </div>
 
-    <%= yield %>
+      <%= render 'layouts/footer' %>
 
-    <%= render 'layouts/footer' %>
-
-    <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"
-    ></script>
-    
+      <!-- MDB -->
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"
+      ></script>
   </body>
 </html>
