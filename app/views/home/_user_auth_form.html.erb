@@ -6,32 +6,21 @@
 <hr>
 
 <div class="modal-body ">
-  <form>
-    <!-- Name input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="name1">Name</label>
-        <input type="text" id="name1" class="form-control border border-dark" value="default-name" />
-    </div>
+  <%= form_with url: api_users_by_email_path do |f|  %>
 
     <!-- Email input -->
     <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="email1">Email address</label> 
-        <input type="email" id="email1" class="form-control border border-dark" placeholder="default-email" value="heidlessemail05@gmail.com" />
+        <%= f.label :email, class:"form-label" %>
+        <%= f.email_field :email, class:"form-control border border-dark", placeholder:"heidlessemail05@gmail.com" %>
     </div>
 
-    <!-- password input -->
-    <div data-mdb-input-init class="form-outline mb-4">
-        <label class="form-label" for="password1">Password</label>
-        <input type="password" id="password1" class="form-control border border-dark" />
+    <div class="actions">
+      <%= f.submit "Continue", class: "btn btn-primary btn-block w-100" %>
     </div>
 
-    <div class="modal-header">
-        <!-- Submit button -->
-        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block w-100">Sign up</button>
-    </div>
-  </form>
+  <% end %>
 
-  <div class="modal-header">
+  <div class="actions mt-3">
     <button type="button" class="btn btn-light btn-block w-100 border border-dark">
         <i class="fa fa-brands fa-google"></i> Continue with Google
     </button>
