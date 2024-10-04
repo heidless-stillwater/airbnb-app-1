@@ -13,7 +13,7 @@ module Api
       # binding.pry 
 
       respond_to do |format|
-        format.json do |format|
+        format.json do
           render json: { error: e.message }.to_json, status: 404
         end
       end
