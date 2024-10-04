@@ -36,7 +36,6 @@ export default class extends Controller {
           Turbo.visit('/users/sign_in');
         }).catch((response) => {
           console.log('sign_up: ', this.emailTarget.value);
-          console.log('response: ', response);
           Turbo.visit('/users/sign_up');
         })
       }
