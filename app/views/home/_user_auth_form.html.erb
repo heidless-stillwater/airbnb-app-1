@@ -5,35 +5,7 @@
 
 <hr>
 
-<div data-controller="users-by-email-auth" class="modal-body ">
-
-  <form class="row g-3 requires-validation" novalidate>
-    <div class="col-md-12">
-        <label for="username" class="form-label">Username:</label>
-        <input type="text" class="form-control" id="username" required>
-        <div class="valid-feedback">
-          Username looks good!
-        </div>
-        <div class="invalid-feedback">
-          Username is required!
-        </div>
-    </div>
-    <div class="col-md-12">
-        <label for="password" class="form-label">Password:</label>
-        <input type="text" class="form-control" id="password" required>
-        <div class="valid-feedback">
-          Password looks good!
-        </div>
-        <div class="invalid-feedback">
-          Password is required!
-        </div>
-    </div>
-    <div class="col-12">
-        <button class="btn btn-primary" type="submit">Login</button>
-    </div>
-  </form>
-
-  <hr>
+<div data-controller="users-by-email-auth" class="modal-body requires-validation ">
 
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>

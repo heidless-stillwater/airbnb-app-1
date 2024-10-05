@@ -14,6 +14,21 @@ export default class extends Controller {
     // console.log('encoded: ', encoded);
     // console.log('decoded: ', decodeURI(encoded));
 
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('.requires-validation')
+      Array.from(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+          }
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+
     this.submitTarget.addEventListener('click', (e) => {
       e.preventDefault();
 
