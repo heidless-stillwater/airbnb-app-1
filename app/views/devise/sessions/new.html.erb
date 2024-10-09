@@ -1,5 +1,5 @@
 
-<div data-controller="form-validation" class="container mb-5">
+<div data-controller="form-validation" class="container mb-5 w-50">
 
   <div class="mb-5">
     <h2>Log in</h2>  
@@ -22,10 +22,12 @@
     <div class="row mb-4">
       <div class="col d-flex justify-content-center">
         <!-- Checkbox -->
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-          <label class="form-check-label" for="form2Example31"> Remember me </label>
-        </div>
+        <% if devise_mapping.rememberable? %>
+          <div class="form-check">
+            <%= f.label :remember_me, class:"form-check-label" %>
+            <%= f.check_box :remember_me, class:"form-check-input" %>
+          </div>
+        <% end %>
       </div>
 
       <div class="col">
@@ -35,7 +37,7 @@
     </div>
 
     <!-- Submit button -->
-    <%= f.submit "Submit", class:"btn btn-primary btn-block mb-4" %>
+    <%= f.submit "Submit", class:"btn btn-primary btn-block mb-4", style:"background-color:#FF385C" %>
 
     <!-- Register buttons -->
     <div class="text-center">
