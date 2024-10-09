@@ -30,19 +30,21 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
+
         <div class="mx-auto" style="width: 400px;">
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
+
+        <div class="bg-transparent">
+          <%= link_to image_tag("bell_14875523.png", size:"30x30", alt:"header notification icon"), root_path %>
+        </div>
+
       </div>
 
-      <ul class="navbar-nav">
-      
-        <div class="pt-4">
-          <%= button_to image_tag("https://storage.googleapis.com/heidless-ror-7-airbnb-app-5-bucket-0/images/bell_1.png", class:"mx-5", size:"30x30", alt:"header notification icon"), root_path %>
-        </div>
+      <ul class="navbar-nav px-5">
 
         <li class="nav-item" data_controller="hello">
         </li>
