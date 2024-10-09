@@ -1,5 +1,4 @@
-<ul>
-  <li>test 0</li>
-  <li>list 2</li>
-  <li>list 3</li>
-</ul>
+
+<% @all_users.each do |usr|  %>
+  <%= usr.id %> | <%= usr.email %><br />
+<% end %>
